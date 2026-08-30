@@ -1,72 +1,187 @@
 # 🌐 CrisisFlow AI
-### Autonomous Disaster Relief Intelligence & Multimodal Logistics Grid
+### Autonomous Disaster Relief Intelligence & Multimodal Crisis Logistics Grid
+
+<div align="center">
+
+![CrisisFlow AI Hero Banner](./src/assets/images/hero_banner.jpg)
 
 [![Google AI Studio](https://img.shields.io/badge/Built%20with-Google%20AI%20Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.studio)
 [![Gemini 3.7](https://img.shields.io/badge/Gemini%20API-3.7%20Flash%20%2F%203.1%20Pro-8E75B2?style=for-the-badge&logo=google-gemini&logoColor=white)](https://ai.google.dev/)
 [![React](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite%20%2B%20Tailwind-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**CrisisFlow AI** is a real-time, AI-native disaster response operating system. It ingests multimodal aerial drone feeds, satellite surveys, and field telemetry to grade structural collapse, locate stranded survivors, optimize emergency fleet dispatches, generate FEMA Incident Action Plans (IAPs), and broadcast multilingual voice alerts.
+**CrisisFlow AI** is a real-time, mission-critical emergency command and disaster relief platform. By uniting **Gemini 3.7 Multimodal Vision**, **tactical GIS spatial layers**, **autonomous rescue unit dispatch optimization**, **FEMA Incident Action Planning (ICS-201/202)**, and **multilingual speech broadcasting**, CrisisFlow AI reduces critical emergency response latency from hours to seconds.
 
----
+[Live Demo](#-live-demo--preview) • [Key Features](#-core-capabilities) • [System Architecture](#-system-architecture) • [AI Pipeline](#-multimodal-ai-pipeline) • [Quick Start](#-quick-start)
 
-## 🚀 Key Modules & Capabilities
-
-### 1. 🛰️ Tactical GIS Command Grid
-- **Real-Time Geospatial Map**: Interactive multi-layer command map rendering active incident clusters, radar sweeps, and emergency perimeters.
-- **Environmental Hazard Overlays**: Live toggleable layers for **Flood Water Surges**, **FLIR Thermal Wildfire Plumes**, **Wind Corridors**, and **Infrastructure Safe Routes**.
-- **Incident Inspection**: Real-time drill-down into any triage marker for status updates, casualty estimates, and matched unit dispatch history.
-
-### 2. 🛩️ Multimodal Vision & Drone Telemetry Triage
-- **Pixel-Level Damage Grading**: Ingests high-resolution aerial drone captures and eyewitness imagery directly to **Gemini 3.7 Flash** for damage estimation (0–100%) and survivor detection.
-- **Tactical Sensor HUD**:
-  - **Optical Mode**: True-color field surveillance.
-  - **FLIR Thermal Simulation**: Infrared thermal inversion for detecting spot fires and living heat signatures.
-  - **Edge Detection Grid**: Concrete fracture and structural shearing analysis.
-- **AI Detection Bounding Boxes**: Dynamic visual overlays highlighting collapse zones, hazmat plumes, and survivor pockets.
-- **1-Click Grid Deployment**: Instantly injects analyzed drone targets into the live dispatch map.
-
-### 3. 🚑 Autonomous Rescue Dispatch Matrix
-- **Automated Capability Matching**: Evaluates vehicle capabilities (USAR Heavy Extrication, Swiftwater Rescue Boats, Swift Helo Air-Evac, Hazmat Containment) against incident priority levels (`P1-CRITICAL`, `P2-HIGH`, `P3-MODERATE`).
-- **Fleet ETA Minimization**: Calculates response times avoiding hazard zones and dynamically updates unit states (`DISPATCHED`, `EN_ROUTE`, `ON_SCENE`, `AVAILABLE`).
-
-### 4. 📢 Multilingual Emergency Broadcast & Voice Synthesis
-- **Civic Warning Generator**: Generates emergency announcements tailored for SMS, Mega-Siren, EAS Radio Broadcasts, and Social Media feeds.
-- **Multi-Language Support**: English, Spanish, Mandarin, Vietnamese, Tagalog, Arabic, French, and Japanese.
-- **Radio Voice Synthesis**: Embedded Web Speech API engine allowing field dispatchers to listen to live audio radio transmissions in multiple languages.
-
-### 5. 📋 FEMA ICS Incident Action Plan (IAP) Formulator
-- **ICS-201 / ICS-202 Formulation**: Generates standard Incident Action Plans complete with Operational Period objectives, command structures, hazard mitigations, and air support branches.
-- **Print & Export Ready**: 1-click export/print formatting for emergency coordination staff.
+</div>
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## 📸 Real-World Disaster Field Feeds & Interface Showcase
+
+### 1. Real-World Field Reconnaissance: Nepal Mountain Flash Flood
+Torrential flood surge carrying heavy silt, debris, and structural damage through an urban valley settlement. Ingested into CrisisFlow AI for automated inundation contouring and bridge stability scoring.
+
+![Nepal Flash Flood Torrential Surge](./src/assets/images/nepal_flash_flood_torrent.jpg)
+
+---
+
+### 2. Ground Reconnaissance: Post-Flood Landslide & Mud Sediment Aftermath
+Severe sediment deposition submerging ground floors and trapping vehicles. Ingested into Gemini 3.7 Vision for casualty estimation and heavy extrication requirements.
+
+![Nepal Flood and Mudslide Aftermath](./src/assets/images/nepal_mudslide_aftermath.jpg)
+
+---
+
+### 3. Multimodal Vision & Drone Telemetry Triage HUD
+Analyze high-resolution drone photos, infrared FLIR thermal captures, and field reconnaissance to grade structural collapse and detect trapped survivors in real time.
+
+![Drone Reconnaissance HUD](./src/assets/images/triage_hud.jpg)
+
+---
+
+### 4. Autonomous Rescue Dispatch & Tactical GIS Grid
+Autonomous capability matching algorithm that dispatches USAR Heavy Extrication, Swiftwater Rescue Boats, and Helo Air-Evac while routing around active flood waters and fire perimeters.
+
+![Tactical GIS Grid & Dispatch Matrix](./src/assets/images/dispatch_matrix.jpg)
+
+---
+
+## ⚡ Problem Statement & Solution
+
+| The Emergency Response Challenge | How CrisisFlow AI Solves It |
+| :--- | :--- |
+| **Information Fog of War**: Eyewitness calls and disjointed drone feeds take hours to review and categorize manually. | **Sub-Second Multimodal Triage**: Ingests raw drone and field photos to instantly grade structural collapse percentage (0–100%), detect victim count, and classify threat vectors using Gemini 3.7. |
+| **Suboptimal Fleet Routing**: Dispatchers manually balance unit capabilities, risking slow responses or sending wrong assets into blocked roads. | **AI-Optimized Capability Matrix**: Automatically scores unit suitability (boat vs. helo vs. heavy extrication), calculates ETAs, and reserves escape corridors. |
+| **FEMA Compliance Burden**: Drafting official FEMA ICS-201/202 documentation takes hours of administrative overhead during active crises. | **Automated IAP Formulator**: Generates compliant incident command action plans with command hierarchy, objectives, and air support branches in one click. |
+| **Language Barriers in Alerts**: Evacuation orders fail to reach non-native speakers in high-risk zones. | **Multilingual Voice Broadcasting**: Translates emergency EAS alerts into 8+ languages with Web Speech voice synthesis for instant radio playback. |
+
+---
+
+## 🌟 Core Capabilities
+
+### 🛰️ 1. Tactical GIS Command Grid
+- **Real-Time Spatial Grid**: Interactive command map plotting critical incident pins, active radius sweeps, and operational sectors.
+- **Dynamic Environmental Overlays**: Toggleable GIS layers for **Flood Surge Vectors**, **FLIR Thermal Wildfire Plumes**, **Wind Corridors**, and **Infrastructure Safe Corridors**.
+- **Incident Inspector**: Real-time drilldown into casualty severity, structural integrity metrics, and assigned rescue fleets.
+
+### 🛩️ 2. AI Drone Telemetry & Multimodal Triage HUD
+- **Pixel-Level Damage Grading**: Direct Base64 image ingestion to **Gemini 3.7 Flash** with structured schema extraction.
+- **Sensor Modes**:
+  - **Optical Mode**: True-color reconnaissance.
+  - **FLIR Thermal Inversion**: Detects thermal hotspots and living body heat signatures through smoke and rubble.
+  - **Edge Fracture Grid**: Computer vision overlay identifying structural shear points and wall fractures.
+- **Detection Overlays**: Real-time bounding boxes highlighting collapse zones, hazmat gas plumes, and survivor pockets.
+- **1-Click Grid Injection**: Push analyzed reconnaissance directly onto the live operational GIS map.
+
+### 🚑 3. Autonomous Rescue Dispatch Matrix
+- **Capability Matching Engine**: Dynamic matching between incident priorities (`P1-CRITICAL`, `P2-HIGH`, `P3-MODERATE`) and specialized units (`USAR Heavy Extrication`, `Swiftwater Boat`, `Helo Air-Evac`, `Hazmat Containment`).
+- **Fleet State Machine**: Real-time state transitions (`AVAILABLE` → `DISPATCHED` → `EN_ROUTE` → `ON_SCENE` → `RESOLVED`) with live ETA tracking.
+
+### 📢 4. Multilingual Emergency Broadcast & Voice Synthesis
+- **Multi-Channel Distribution**: Generates optimized messages for SMS, Mega-Siren, EAS Radio Broadcasts, and Civic Social Feeds.
+- **8+ Languages Supported**: English, Spanish, Mandarin, Vietnamese, Tagalog, Arabic, French, and Japanese.
+- **Audio Radio Synthesis**: Client-side Web Speech API playback engine delivering synthesized radio dispatches.
+
+### 📋 5. FEMA ICS Incident Action Plan (IAP) Engine
+- **FEMA ICS-201 / ICS-202 Compliance**: Generates complete Incident Briefings, Command Objectives, Weather Factors, Safety Messages, and Air Support Divisions.
+- **Export & Print**: Clean, print-ready layout for emergency command staff distribution.
+
+---
+
+## 🏗️ System Architecture
 
 ```
-├── client (React 18 + TypeScript + Vite)
-│   ├── src/components/       # Modular UI (Map, Triage HUD, Dispatch, Broadcast, IAP)
-│   ├── src/data/             # Disaster scenarios, fleets, incident feeds
-│   └── src/types.ts          # Strongly typed crisis data models
-│
-└── server (Express + Node.js)
-    ├── server.ts             # REST API Proxy + Vite middleware
-    └── server/gemini.ts      # Google Gen AI SDK integration & structured schemas
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        CRISISFLOW AI DASHBOARD                          │
+│     (React 18 + TypeScript + Tailwind CSS + Lucide Icons + Motion)      │
+├───────────────┬─────────────────────────┬───────────────────────────────┤
+│ Tactical GIS  │  Multimodal Drone HUD   │   Autonomous Dispatch Matrix  │
+│ Command Grid  │  • Optical / FLIR / Edge│   • Capability Matcher        │
+│ • Mapbox/GIS  │  • Damage Estimator     │   • Fleet Status Machine      │
+│ • Hazard Lyr  │  • Bounding Box Engine  │   • ETA Route Minimizer       │
+├───────────────┴─────────────────────────┴───────────────────────────────┤
+│          FEMA ICS-201/202 Formulator & Multilingual EAS Broadcast       │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │ (Secure API Proxy)
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                       EXPRESS NODE.JS BACKEND                           │
+│                      (server.ts / server/gemini.ts)                     │
+├─────────────────────────────────────────────────────────────────────────┤
+│ • /api/triage/analyze    ──► High-Resolution Multimodal Base64 Image    │
+│ • /api/dispatch/optimize ──► Priority & Unit Capability Optimization    │
+│ • /api/iap/generate      ──► Structured FEMA ICS-201/202 Formulation    │
+│ • /api/broadcast/generate──► Multi-Channel Multilingual EAS Translation │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                  GOOGLE GEMINI 3.7 MULTIMODAL API                       │
+│    (gemini-3.7-flash • gemini-flash-latest • gemini-3.1-pro-preview)    │
+│                                                                         │
+│  • Multimodal Vision Comprehension   • Structured JSON Type Schema      │
+│  • Reasoning & Latency Fallback      • Zero-Loss Safety Handling        │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
-
-- **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Lucide Icons, Motion (Framer Motion).
-- **Backend**: Node.js, Express, `@google/genai` TypeScript SDK.
-- **AI Models**: `gemini-3.7-flash`, `gemini-flash-latest`, `gemini-3.1-pro-preview`.
-- **Audio & Synthesis**: Web Speech API for emergency radio broadcasting.
 
 ---
 
-## ⚡ Getting Started Locally
+## 🧠 Multimodal AI Pipeline
+
+When a drone capture or field photo is uploaded:
+
+```
+[Drone Capture / File Upload]
+           │
+           ▼
+[Base64 Encoding & Validation (Up to 25MB)]
+           │
+           ▼
+[Express Server-Side Route (/api/triage/analyze)]
+           │
+           ▼
+[Google Gen AI TypeScript SDK Client]
+  ├── System Prompt: Disaster Reconnaissance Specialist
+  ├── User Part 1: High-Resolution Inline Image Buffer
+  └── User Part 2: Incident Context & Telemetry Coordinates
+           │
+           ▼
+[Structured Response Schema Generation]
+  ├── damageGrade (0-100%)
+  ├── collapseType (None / Partial / Complete / Hazardous)
+  ├── estimatedCasualties (trapped / ambulatory / critical)
+  ├── requiredAssets (USAR / Boat / Helo / Hazmat / K9)
+  ├── immediateDirectives (15-Minute Action Items)
+  └── boundingBoxes ([ymin, xmin, ymax, xmax, label])
+```
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+- **Frontend**:
+  - `react`: ^18.3.1
+  - `vite`: Modern build tool and dev server
+  - `tailwindcss`: Tactical high-contrast styling
+  - `motion/react`: Smooth layout transitions & HUD animations
+  - `lucide-react`: Mission-critical tactical iconography
+  - `Web Speech API`: Native browser speech synthesis
+- **Backend & AI**:
+  - `express`: REST API proxy routes
+  - `@google/genai`: Official Google Gen AI TypeScript SDK
+  - `esbuild`: High-performance production bundling
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ or 20+
-- npm or pnpm
-- Google Gemini API Key ([Get one at Google AI Studio](https://aistudio.google.com/))
+- **Node.js**: v18.0.0 or higher
+- **npm**: v9.0.0 or higher
+- **Google Gemini API Key**: [Get a key from Google AI Studio](https://aistudio.google.com/)
 
 ### 1. Clone the Repository
 ```bash
@@ -79,35 +194,48 @@ cd crisisflow-ai
 npm install
 ```
 
-### 3. Configure Environment Variables
-Create a `.env` file in the root directory:
+### 3. Setup Environment Variables
+Create a `.env` file in the project root:
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-### 4. Run Development Server
+### 4. Start the Application
 ```bash
+# Start local development server
 npm run dev
 ```
-Open your browser at `http://localhost:3000` to interact with the command dashboard.
+Navigate to `http://localhost:3000` to launch the CrisisFlow AI Command Center.
 
-### 5. Build for Production
+### 5. Production Build
 ```bash
+# Compile client and bundle backend
 npm run build
+
+# Start production server
 npm start
 ```
 
 ---
 
-## 🎯 Demo Walkthrough Guide (Hackathon Video)
+## 🎬 Hackathon Demo Script (2 Minutes)
 
-1. **Overview (0:00 - 0:30)**: Open the **Tactical GIS Command Grid**, inspect live crisis pins, and toggle environmental layers (Thermal Heat & Flood Surges).
-2. **Multimodal Drone Triage (0:30 - 1:05)**: Navigate to **Drone Triage**, drag-and-drop a disaster image, toggle **FLIR Thermal / Edge Grid**, click **Run AI Triage Analysis** to see Gemini extract structural damage & casualties, then click **Inject into Active Grid**.
-3. **Autonomous Dispatch (1:05 - 1:30)**: Click **Run AI Autonomous Dispatch** in the Dispatch Matrix to view automated vehicle routing and ETA calculations.
-4. **Broadcast & Voice Alert (1:30 - 1:45)**: Switch languages in **Emergency Broadcast** and click **Play Radio Audio** for speech output.
-5. **Incident Action Plan (1:45 - 2:00)**: Generate and review the FEMA ICS-201/202 command document.
+| Time | Action | Voiceover Script |
+| :--- | :--- | :--- |
+| **0:00 - 0:25** | **Tactical GIS Command Grid** | *"CrisisFlow AI is an autonomous disaster relief operating system. Here on the Tactical GIS Grid, commanders see live incident pins, radar rings, and toggleable hazard overlays including Flood Water Surges and FLIR Wildfire Thermal plumes."* |
+| **0:25 - 0:55** | **AI Drone Triage HUD** | *"When aerial drone footage arrives, our Vision HUD analyzes the pixels using Gemini 3.7. Notice how we can switch to FLIR Thermal or Edge Detection, run AI analysis, and instantly receive damage grading, casualty headcount, and AI bounding boxes."* |
+| **0:55 - 1:20** | **Autonomous Rescue Dispatch** | *"Next, our autonomous dispatch matrix balances specialized units—like USAR heavy extrication and rescue boats—against incident urgency, calculating the fastest safe routes."* |
+| **1:20 - 1:45** | **Multilingual Voice Broadcast** | *"To alert the public, CrisisFlow generates multi-channel alerts and uses speech synthesis to broadcast immediate evacuation warnings in multiple languages."* |
+| **1:45 - 2:00** | **FEMA ICS-201/202 Plan & Close** | *"Finally, the commander generates official FEMA Incident Action Plans with a single click. CrisisFlow AI saves lives when seconds count."* |
 
 ---
 
-## 📜 License
-Licensed under the [MIT License](LICENSE).
+## 📄 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ for disaster responders worldwide using Google AI Studio & Gemini 3.7.</sub>
+</div>
