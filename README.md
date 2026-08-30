@@ -13,9 +13,21 @@
 
 **CrisisFlow AI** is a real-time, mission-critical emergency command and disaster relief platform. By uniting **Gemini 3.7 Multimodal Vision**, **tactical GIS spatial layers**, **autonomous rescue unit dispatch optimization**, **FEMA Incident Action Planning (ICS-201/202)**, and **multilingual speech broadcasting**, CrisisFlow AI reduces critical emergency response latency from hours to seconds.
 
+### 🔴 [**Access Live Application Demo**](https://ais-pre-rcut2pmv7lymbxndwqribe-305446503352.asia-southeast1.run.app)
+**Live Cloud Run Deployment URL:** `https://ais-pre-rcut2pmv7lymbxndwqribe-305446503352.asia-southeast1.run.app`
+
 [Live Demo](#-live-demo--preview) • [Key Features](#-core-capabilities) • [System Architecture](#-system-architecture) • [AI Pipeline](#-multimodal-ai-pipeline) • [Quick Start](#-quick-start)
 
 </div>
+
+---
+
+## 🔗 Live Demo & Deployment
+
+| Environment | Access Link | Description |
+| :--- | :--- | :--- |
+| **Public Live Demo** | [**Launch CrisisFlow AI App**](https://ais-pre-rcut2pmv7lymbxndwqribe-305446503352.asia-southeast1.run.app) | Public evaluation deployment for hackathon judges & community testing |
+| **Interactive Capabilities** | Full Multimodal AI, Tactical GIS, Speech Synthesis | Zero-setup required in browser |
 
 ---
 
