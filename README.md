@@ -218,24 +218,6 @@ npm start
 
 ---
 
-## 🎬 Hackathon Demo Script (2 Minutes)
-
-| Time | Action | Voiceover Script |
-| :--- | :--- | :--- |
-| **0:00 - 0:25** | **Tactical GIS Command Grid** | *"CrisisFlow AI is an autonomous disaster relief operating system. Here on the Tactical GIS Grid, commanders see live incident pins, radar rings, and toggleable hazard overlays including Flood Water Surges and FLIR Wildfire Thermal plumes."* |
-| **0:25 - 0:55** | **AI Drone Triage HUD** | *"When aerial drone footage arrives, our Vision HUD analyzes the pixels using Gemini 3.7. Notice how we can switch to FLIR Thermal or Edge Detection, run AI analysis, and instantly receive damage grading, casualty headcount, and AI bounding boxes."* |
-| **0:55 - 1:20** | **Autonomous Rescue Dispatch** | *"Next, our autonomous dispatch matrix balances specialized units—like USAR heavy extrication and rescue boats—against incident urgency, calculating the fastest safe routes."* |
-| **1:20 - 1:45** | **Multilingual Voice Broadcast** | *"To alert the public, CrisisFlow generates multi-channel alerts and uses speech synthesis to broadcast immediate evacuation warnings in multiple languages."* |
-| **1:45 - 2:00** | **FEMA ICS-201/202 Plan & Close** | *"Finally, the commander generates official FEMA Incident Action Plans with a single click. CrisisFlow AI saves lives when seconds count."* |
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
-
----
-
 <div align="center">
   <sub>Built with ❤️ for disaster responders worldwide using Google AI Studio & Gemini 3.7.</sub>
 </div>
