@@ -1,0 +1,6 @@
+{
+  "name": "CrisisFlow AI",
+  "description": "Autonomous disaster relief intelligence grid with multimodal drone triage, real-time rescue dispatch, supply routing, and multi-language emergency broadcasts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
